@@ -44,5 +44,3 @@ def make_api_request(input_text):
     return text
 
 text = make_api_request(input_text)
-
-print(text)
