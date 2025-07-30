@@ -1,5 +1,4 @@
 import os
-from PIL import Image
 from google.cloud import vision
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = './API_credentials.json'
@@ -22,7 +21,6 @@ def extract_text(image_path):
             {'type_': vision.Feature.Type.TEXT_DETECTION}
 
         ]
-
 
     })
 
